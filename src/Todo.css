@@ -1,0 +1,88 @@
+.container {
+   margin: auto;
+   max-width: 550px;
+}
+
+.done{
+   text-decoration: line-through;
+}
+
+.done-check{
+   color: blue;
+}
+
+ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.item{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 30px;
+   width: 100%;
+   padding: 15px;
+   margin-top: 15px;  
+}
+
+.card{
+   box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.add-button{
+   width: 50px;
+   height: 50px;
+   font-size: 20px;
+   border: none;
+   background-color: skyblue;
+   color: white;
+   border-radius: 25px;
+}
+
+.modal{
+   width: 100vw;
+   height: 100vh;
+
+   background-color: rgba(0, 0, 0, 0.226);
+
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-modal{
+   padding: 20px;
+   background-color: white;
+}
+
+.hide{
+   display: none;
+}
+
+@media (max-width: 500px) { 
+   .container{
+      margin: 0;
+   }
+
+   .header{
+      margin-inline: 0.5rem;
+   }
+
+   .item{
+      font-size: 20px;
+      padding: 0.5rem;
+      width: 95%;
+   }
+}
